@@ -1,0 +1,40 @@
+@use '../assets/scss/vars' as v;
+
+.slope-card {
+    /* border: 1px solid v.$blue; */
+    padding: 1em;
+    box-shadow: 5px 5px 0px 0px rgba(131, 143, 153, 1);
+
+    //Ikon som indikerar svårighet
+    span:not(span.bold) {
+        display: block;
+        width: 2em;
+        height: 2em;
+        margin: 1em auto;
+    }
+
+    span.supereasy {
+        background-color: v.$brightgreen;
+        border-radius: 50%;
+    }
+
+    span.easy {
+        background-color: v.$brightblue;
+    }
+
+    span.medium {
+        background-color: rgb(154, 4, 4);
+        height: 1.5em;
+        width: 2em;
+    }
+
+    span.difficult {
+        background-color: black;
+        transform: rotate(45deg);
+    }
+
+    //Fetstilt text
+    .bold {
+        font-weight: 600;
+    }
+}

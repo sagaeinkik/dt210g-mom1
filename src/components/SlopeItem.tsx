@@ -1,5 +1,5 @@
 import { Skislope } from "../assets/models/slope";
-
+import "./SlopeItem.scss";
 
 const SlopeItem = ({ name, verticalMeters, difficulty, slopeLights }: Skislope) => {
     // Typdefinition för svårighetsnivå
@@ -31,9 +31,9 @@ const SlopeItem = ({ name, verticalMeters, difficulty, slopeLights }: Skislope) 
     <div className="slope-card"> 
         <span className={difficultyLvl.en}></span>
         <h2>{ name }</h2>
-        <p>Fallhöjdsmeter: { verticalMeters }</p>
-        <p>Svårighet: { difficultyLvl.sv }</p>
-        <p>Backbelysning: { slopeLights ? "Ja" : "Nej"}</p>
+        <p ><span className="bold">Fallhöjdsmeter:</span> { verticalMeters }</p>
+        <p><span className="bold">Svårighet:</span> { difficultyLvl.sv }</p>
+        <p><span className="bold">Backbelysning:</span> { slopeLights ? "Ja" : "Nej"}</p>
     </div>
   )
 }

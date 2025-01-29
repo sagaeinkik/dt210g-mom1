@@ -11,7 +11,10 @@ const Header = ({ title }: HeaderProps ) => {
   return (
     <>
         <header>
+          <div className="text-content">
+
             <p>{ title }</p>
+          </div>
         </header>
     </>
   )

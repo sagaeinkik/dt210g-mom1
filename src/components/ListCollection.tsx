@@ -1,5 +1,6 @@
 import SlopeItem from "./SlopeItem"; 
 import { Skislope } from "../assets/models/slope";
+import "./ListCollection.scss";
 
 const ListCollection = () => {
     //Lista
@@ -49,14 +50,15 @@ const ListCollection = () => {
 
     ];
   return (
-    <>
+    <div className="slope-wrapper">
+
         {slopes.map((slope) => (
-                <SlopeItem 
-                    key={slope.name}
-                    {...slope}
-                />
-            ))}
-    </>
+            <SlopeItem 
+            key={slope.name}
+            {...slope}
+            />
+        ))}
+        </div>
   )
 }
 
