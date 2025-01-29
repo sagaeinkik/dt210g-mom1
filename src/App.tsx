@@ -1,4 +1,3 @@
-import './App.scss'
 import Header from "./components/Header";
 import ListCollection from "./components/ListCollection";
 import Footer from './components/Footer';
