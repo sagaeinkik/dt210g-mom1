@@ -1,0 +1,7 @@
+@use '../assets/scss/vars' as v;
+
+footer {
+    background-color: v.$blue;
+    color: white;
+    text-align: center;
+}

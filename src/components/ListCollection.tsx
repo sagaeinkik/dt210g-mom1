@@ -51,10 +51,10 @@ const ListCollection = () => {
     ];
   return (
     <div className="slope-wrapper">
-
-        {slopes.map((slope) => (
+        {/* Loopa igenom! */}
+        {slopes.map((slope, index) => (
             <SlopeItem 
-            key={slope.name}
+            key={index}
             {...slope}
             />
         ))}

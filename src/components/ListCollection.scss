@@ -6,3 +6,24 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
 }
+
+//Media queries
+@media (max-width: 900px) {
+    .slope-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .slope-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    //Ta bort grid, gör till flex med columns
+    .slope-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
