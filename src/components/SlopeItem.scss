@@ -1,7 +1,7 @@
 @use '../assets/scss/vars' as v;
 
+//Själva kortet som innehåller information om en backe
 .slope-card {
-    /* border: 1px solid v.$blue; */
     padding: 1em;
     box-shadow: 5px 5px 0px 0px rgba(131, 143, 153, 1);
 
@@ -13,21 +13,25 @@
         margin: 1em auto;
     }
 
+    //Mycket lätt: rund
     span.supereasy {
         background-color: v.$brightgreen;
         border-radius: 50%;
     }
 
+    //Lätt: bara fyrkantig
     span.easy {
         background-color: v.$brightblue;
     }
 
+    //Medel: rektangel
     span.medium {
         background-color: rgb(154, 4, 4);
         height: 1.5em;
         width: 2em;
     }
 
+    //Svår: svart Ruter
     span.difficult {
         background-color: black;
         transform: rotate(45deg);

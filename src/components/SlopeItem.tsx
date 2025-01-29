@@ -12,6 +12,7 @@ const SlopeItem = ({ name, verticalMeters, difficulty, slopeLights }: Skislope) 
     const getDifficulty = (difficulty: string): DifficultyLevel => {
         switch (difficulty.toLowerCase()) {
             case "blå":
+                //Returnera både svenska och engelska
                 return {sv: "Lätt", en: "easy"};
             case "röd":
                 return {sv: "Medelsvår", en: "medium"};
@@ -24,7 +25,7 @@ const SlopeItem = ({ name, verticalMeters, difficulty, slopeLights }: Skislope) 
         }
     }
 
-    //Lagra svårighet så man kan komma åt både engelska och svenska
+    //Lagra svårighet så man kan komma åt båda språken
     const difficultyLvl = getDifficulty(difficulty);
 
   return (

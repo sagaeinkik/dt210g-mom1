@@ -22,16 +22,9 @@ h3 {
     font-weight: 300;
 }
 
+//Begränsa bredd på textinnehåll osv
 .text-content {
     max-width: 60em;
     margin: auto;
     padding: 1em;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav ul li {
-    list-style: none;
 }
