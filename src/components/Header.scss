@@ -1,0 +1,17 @@
+@use '../assets/scss/vars' as v;
+
+header {
+    background-color: v.$blue;
+    height: 8.83em;
+    margin-bottom: 100px;
+
+    p {
+        font-size: 10em;
+        text-align: right;
+        margin-right: 3rem;
+        background: linear-gradient(to bottom, white 55%, v.$blue 45%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}

@@ -1,0 +1,36 @@
+@use 'assets/scss/vars' as v;
+
+//Allmänna regler och nollställningar
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: v.$archivo;
+    line-height: 1.6;
+    max-width: 2800px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+.text-content {
+    max-width: 60em;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul li {
+    list-style: none;
+}

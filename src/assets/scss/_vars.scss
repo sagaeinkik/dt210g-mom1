@@ -1,0 +1,19 @@
+//Fonts
+$archivo: 'Archivo', Helvetica, Arial, sans-serif;
+
+//Färger
+$pinkish: #998383;
+$blue: #838f99;
+$green: #8a9983;
+
+$brightblue: #075290;
+$brightgreen: #4f7a17;
+$brightyellow: #eb9f08;
+
+//Transition mixin såklart!!
+@mixin transition {
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
