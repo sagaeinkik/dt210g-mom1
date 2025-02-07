@@ -4,16 +4,39 @@ header {
     background-color: v.$blue;
     height: 9.83em;
     margin-bottom: 5em;
+    position: relative;
 
-    p {
-        font-size: 10em;
-        text-align: right;
-        margin-right: 3rem;
-        //Gör halva texten vit, andra halvan blå, horisontellt
-        background: linear-gradient(to bottom, white 55%, v.$blue 45%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+    img {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .text-content {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        p {
+            font-size: 10em;
+            position: absolute;
+            z-index: 1;
+            top: 1rem;
+        }
+
+        #top {
+            color: v.$blue;
+            clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
+        }
+
+        #bottom {
+            color: white;
+            text-shadow: 1px 1px 0 v.$blue, -1px 1px 0 v.$blue, -1px -1px 0 v.$blue,
+                1px -1px 0 v.$blue;
+            clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+        }
     }
 }
 
@@ -23,9 +46,8 @@ header {
     header {
         height: 6.3em;
     }
-    header p {
+    header .text-content p {
         font-size: 6em;
-        margin-right: 0;
     }
 }
 
@@ -35,7 +57,7 @@ header {
         height: 4.4em;
         margin-bottom: 2em;
     }
-    header p {
+    header .text-content p {
         font-size: 4em;
         background: linear-gradient(to bottom, white 53%, v.$blue 47%);
         -webkit-background-clip: text;
